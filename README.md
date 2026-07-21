@@ -35,7 +35,7 @@ The original dataset is large, approximately 5 GB when downloaded as an archive.
 ## Known limitations
 
 - **`is_open` is a single snapshot**, not a time series. This dataset supports *correlation* with closure status at one point in time, not a true survival/prediction model.
-- **`price_range` is partially imputed.** Rows missing a price tag in the source data default to `2` ($$) rather than being left null — this was a deliberate simplification, but it means the $$ tier is somewhat inflated relative to true pricing.
+- **`price_range` is partially imputed.** Rows missing a price tag in the source data default to `2` rather than being left null — this was a deliberate simplification, but it means the $$ tier is somewhat inflated relative to true pricing.
 - **Geographic coverage is uneven.** 13 states are represented, but sample sizes range from under 1,000 restaurants (e.g. IL, DE) to over 12,000 (PA) — state-level comparisons should be read with sample size in mind.
 
 ## License
